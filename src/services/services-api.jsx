@@ -45,4 +45,21 @@ const getFilmsReviwers = async (movieId) => {
   });
 };
 
-export { getRecomendation, getFilmsById, getFilmsCredits, getFilmsReviwers };
+const getFilmsForSearch = async (value, page) => {
+  return await fetch(
+    `${API}/search/movie?api_key=${API_KEY}&language=en-US&${value}&page=${page}&include_adult=false`
+  ).then((response) => {
+    if (response.ok) {
+      return response.json();
+    }
+    return Promise.reject(new Error(`Nothing found`));
+  });
+};
+
+export {
+  getRecomendation,
+  getFilmsById,
+  getFilmsCredits,
+  getFilmsReviwers,
+  getFilmsForSearch,
+};
