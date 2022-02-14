@@ -1,8 +1,8 @@
 import { useLocation, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getFilmsForSearch } from "../../services/services-api";
-import Loader from "../loader/Loader";
-import SearchForm from "../searchForm/SearchForm";
+import Loader from "../../components/loader/Loader";
+import SearchForm from "../../components/searchForm/SearchForm";
 import defaultPhoto from "../../images/no-img.jpeg";
 import toast from "react-hot-toast";
 import styled from "./MoviesPage.module.css";

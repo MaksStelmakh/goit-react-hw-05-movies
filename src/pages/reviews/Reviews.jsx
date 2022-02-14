@@ -1,7 +1,7 @@
 import { getFilmsReviwers } from "../../services/services-api";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Loader from "../loader/Loader";
+import Loader from "../../components/loader/Loader";
 import styled from "./Reviews.module.css";
 
 export default function Reviews() {
@@ -18,7 +18,7 @@ export default function Reviews() {
       .finally(setLoading(false));
   }, []);
   return (
-    <div>
+    <>
       {loading && <Loader />}
       <ul className={styled.list}>
         {review && review.results.length !== 0 ? (
@@ -34,6 +34,6 @@ export default function Reviews() {
           <h2>We don't have any reviews for this movie.</h2>
         )}
       </ul>
-    </div>
+    </>
   );
 }

@@ -1,13 +1,13 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Layout from "../layout/Layout";
-import Reviews from "../reviews/Reviews";
-import Cast from "../cast/Cast";
+import Reviews from "../../pages/reviews/Reviews";
+import Cast from "../../pages/cast/Cast.jsx";
 import styled from "./App.module.css";
 
-const HomePage = lazy(() => import("../homePage/HomePage"));
-const MoviesPage = lazy(() => import("../moviesPage/MoviesPage"));
-const Singlecard = lazy(() => import("../singleCard/SingleCard"));
+const HomePage = lazy(() => import("../../pages/homePage/HomePage"));
+const MoviesPage = lazy(() => import("../../pages/moviesPage/MoviesPage"));
+const Singlecard = lazy(() => import("../../pages/singleCard/SingleCard"));
 
 function App() {
   return (

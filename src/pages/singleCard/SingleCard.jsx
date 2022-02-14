@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import { getFilmsById } from "../../services/services-api";
 import toast from "react-hot-toast";
-import Publication from "../publication/Publication";
+import Publication from "../../components/publication/Publication";
 import styled from "./SingleCard.module.css";
 
 export default function Singlecard() {

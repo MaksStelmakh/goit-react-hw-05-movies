@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import RecomendedFilms from "../recomendedFilms/RecomendedFilms";
-import Loader from "../loader/Loader";
+import RecomendedFilms from "../../components/recomendedFilms/RecomendedFilms";
+import Loader from "../../components/loader/Loader";
 import toast from "react-hot-toast";
 import { getRecomendation } from "../../services/services-api";
 import styles from "./HomePage.module.css";

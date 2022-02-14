@@ -2,7 +2,7 @@ import { getFilmsCredits } from "../../services/services-api";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import defaultPhoto from "../../images/no-img.jpeg";
-import Loader from "../loader/Loader";
+import Loader from "../../components/loader/Loader";
 import styled from "./Cast.module.css";
 
 export default function Cast() {
