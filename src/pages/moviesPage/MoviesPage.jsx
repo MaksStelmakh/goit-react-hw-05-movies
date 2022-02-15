@@ -24,7 +24,6 @@ export default function MoviesPage() {
         .finally(setLoading(false));
     }
   }, [value, page]);
-
   const pictureMethod = ({ results }) => {
     if (findedFilms.length === 0 && results.length === 0) {
       return toast.error("There is no result for your reqest!");

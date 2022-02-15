@@ -7,6 +7,7 @@
 .fallback {
   text-decoration: none;
   color: white;
+  background-color: inherit;
   display: inline-block;
   position: relative;
   padding: 15px 30px;
