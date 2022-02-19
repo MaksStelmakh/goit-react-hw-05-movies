@@ -21,3 +21,21 @@
   margin-bottom: 30px;
   padding: 10px;
 }
+
+@media screen and (max-width: 790px) {
+  .list {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .cast_item {
+    width: 80%;
+    height: auto;
+  }
+
+  .cast_photo {
+    width: 100%;
+    height: auto;
+  }
+}

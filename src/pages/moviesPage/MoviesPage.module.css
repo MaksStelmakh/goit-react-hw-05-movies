@@ -85,3 +85,21 @@
   text-align: center;
   padding: 30px;
 }
+
+@media screen and (max-width: 870px) {
+  .list {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .filmItem {
+    width: 80%;
+    height: auto;
+  }
+
+  .filmImages {
+    width: 100%;
+    height: auto;
+  }
+}

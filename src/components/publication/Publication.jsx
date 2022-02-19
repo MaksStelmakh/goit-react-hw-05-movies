@@ -16,6 +16,7 @@ export default function Publication({ item }) {
       <div className={styled.left_section}>
         <h2 className={styled.main_title}>{original_title}</h2>
         <img
+          className={styled.mainPhoto}
           src={`https://image.tmdb.org/t/p/w500${poster_path}`}
           alt={original_title}
         />

@@ -54,3 +54,9 @@
   text-align: center;
   padding: 30px;
 }
+
+@media screen and (max-width: 870px) {
+  .listFilms {
+    justify-content: center;
+  }
+}

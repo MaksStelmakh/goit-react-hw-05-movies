@@ -29,3 +29,36 @@
 .list {
   padding-left: 20px;
 }
+
+@media screen and (max-width: 950px) {
+  .arrangement {
+    display: block;
+  }
+  .right_section {
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .mainPhoto {
+    width: 100%;
+    height: auto;
+  }
+  .left_section {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .main_title {
+    font-size: 25px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+}

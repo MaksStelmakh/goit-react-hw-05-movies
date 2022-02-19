@@ -1,6 +1,6 @@
 .container {
-  width: auto;
-  text-align: center;
+  width: 200px;
+  margin: 40px 0 40px 20px;
   position: relative;
 }
 input {
@@ -14,9 +14,7 @@ input {
   outline: none;
   transition: 0.3s linear;
 }
-input:focus {
-  width: 300px;
-}
+
 .search {
   width: 42px;
   height: 42px;
@@ -24,11 +22,25 @@ input:focus {
   border: none;
   position: absolute;
   top: 4px;
-  right: 670px;
+  right: -65px;
   cursor: pointer;
   transition: 0.3s linear;
 }
 
-input:focus ~ .search {
-  right: 645px;
+@media screen and (max-width: 340px) {
+  input {
+    width: 220px;
+  }
+  .search {
+    right: -30px;
+  }
+}
+
+@media screen and (min-width: 385px) {
+  input:focus {
+    width: 300px;
+  }
+  input:focus ~ .search {
+    right: -120px;
+  }
 }

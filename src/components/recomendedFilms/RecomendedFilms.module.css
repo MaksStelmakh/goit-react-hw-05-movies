@@ -34,3 +34,15 @@
   width: 400px;
   height: 600px;
 }
+
+@media screen and (max-width: 450px) {
+  .filmItem {
+    width: 80%;
+    height: auto;
+  }
+
+  .filmImages {
+    width: 100%;
+    height: auto;
+  }
+}
